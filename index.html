@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Достопримечательности</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-content">
+            <a class="logo" href="index.html">
+              <img class="logo__img" src="header/logo.svg" alt="">
+            </a>
+            <button class="location-btn">
+              <img class="location-btn__img" src="header/geolocation.svg" alt="">
+              <span class="location-btn__text">Владивосток</span>
+            </button>
+            <div class="search__wrapper">
+              <input class="search" type="text" placeholder="Поиск...">
+            </div>
+            <button class="calendar">
+              <img class="calendar__img" src="header/calendar.svg" alt="">
+              <span class="calendar__text">Календарь событий</span>
+            </button>
+            <button class="mobile-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header__menu">
+        <div class="container">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">Достопримечательности</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="exhibitions.html">Выставки</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="entertainment.html">Развлечения</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="excursions.html">Экскурсии</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__inner">
+            <h1 class="catalog__title">Достопримечательности Владивостока</h1>
+            <button class="catalog-btn">
+              <img class="catalog-btn__img" src="main/catalog/geolocation-map.svg" alt="">
+              <span class="catalog-btn__text">показать на карте</span>
+            </button>
+
+            <iframe class="iframe hidden" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad87bfe79a4a53f97b883d9ee2805ceed383d79b14ed21fe8c8b5e4a893687e37&amp;source=constructor" frameborder="0"></iframe>
+
+            <ul class="catalog__filters-list">
+              <li class="catalog__filters-title">Виды достопримечательностей:</li>
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn btn-all">Все</button>
+              </li>
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn btn-monument">Памятники</button>
+              </li>
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn btn-bridge">Мосты</button>
+              </li>
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn btn-streets">Улицы</button>
+              </li>
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn btn-fortress">Крепости</button>
+              </li>
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn btn-churches">Соборы, церкви</button>
+              </li>
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn btn-hill">Сопки</button>
+              </li>
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn btn-museum">Музеи</button>
+              </li>
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn btn-embankment">Набережные</button>
+              </li>
+              <li class="catalog__filters-item">
+                <button class="catalog__filters-btn btn-other">Прочее</button>
+              </li>
+            </ul>
+
+            <div class="catalog__box">
+
+              <div class="catalog__box-item bridge">
+                <div class="slider slider--first">
+                  <div class="slider__item">
+                    <img src="main/catalog/1,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/1,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/1,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Русский мост</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">Русский мост</h4>
+                  <p class="catalog__box-content-text">
+                    Символ единения двух берегов и территорий, величественно простирающийся над бухтой Владивостока.
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog__box-item other">
+                <div class="slider slider--second">
+                  <div class="slider__item">
+                    <img src="main/catalog/2,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/2,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/2,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text"> ул. Токаревская Кошка</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">Маяк Эгершельд</h4>
+                  <p class="catalog__box-content-text">
+                    Маяк Эгершельд, возвышающийся на мысе, напоминает о важности морской безопасности и вдыхает воздух океана в городскую атмосферу.
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog__box-item bridge">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img src="main/catalog/3,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/3,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/3,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Золотой мост</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">Золотой мост</h4>
+                  <p class="catalog__box-content-text">
+                    Золотой мост, соединяя остров Русский и материковую часть, не только обеспечивает транспортную связь, но и украшает горизонт Владивостока.
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog__box-item hill">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img src="main/catalog/4,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/4,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/4,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Ленинский район</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">Сопка «Орлиное Гнездо»</h4>
+                  <p class="catalog__box-content-text">
+                    Уникальное место, открывающее завораживающий вид на залив и город, ставшее настоящим символом Владивостока.
+                  </p>
+                </div>
+              </div>
+
+              <button class="loadmore loadmore--mobile">Загрузить ещё</button>
+
+              <div class="catalog__box-item fortress">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img src="main/catalog/5,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/5,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/5,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Батарейная ул., 4А</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">Владивостокская крепость</h4>
+                  <p class="catalog__box-content-text">
+                    Исторический комплекс, хранящий память о важной роли города в русско-японской войне.
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog__box-item streets">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img src="main/catalog/6,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/6,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/6,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Светланская улица</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">Светланская улица</h4>
+                  <p class="catalog__box-content-text">
+                    Сердце города, насыщенное жизнью и культурой, где сливаются традиции и современность.
+                  </p>
+                </div>
+              </div>
+
+              <button class="loadmore loadmore--normal">Загрузить ещё</button>
+
+              <div class="catalog__box-item hidden monument">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img class="img" src="main/catalog/7,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img class="img" src="main/catalog/7,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img class="img" src="main/catalog/7,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Площадь Борцов Революции</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">
+                    Памятник борцам за власть Советов на Дальнем Востоке
+                  </h4>
+                  <p class="catalog__box-content-text">
+                    Памятник борцам за власть Советов на Дальнем Востоке напоминает о периоде истории, когда Владивосток становился центром политических событий.
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog__box-item hidden monument">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img class="img" src="main/catalog/8,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img class="img" src="main/catalog/8,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img class="img" src="main/catalog/8,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Садовническая ул., 77</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">памятник владимиру высоцкому</h4>
+                  <p class="catalog__box-content-text">
+                    Гармоничное слияние искусства и памяти о великом артисте в сердце города.
+                  </p>
+                </div>
+              </div>
+
+              <button class="loadmore loadmore--mobile">Загрузить ещё</button>
+
+              <div class="catalog__box-item hidden monument">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img class="img" src="main/catalog/9,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img class="img" src="main/catalog/9,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img class="img" src="main/catalog/9,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">ул. Петра Великого, 8</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">
+                    триумфальная арка цесаревича николая
+                  </h4>
+                  <p class="catalog__box-content-text">
+                    Величественное сооружение, свидетельствующее о важности исторических моментов для Владивостока.
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog__box-item hidden churches">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img src="main/catalog/10,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/10,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/10,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Пушкинская ул., 14</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">
+                    Евангелическо-лютеранская церковь Святого Павла
+                  </h4>
+                  <p class="catalog__box-content-text">
+                    Изысканный архитектурный ансамбль, вносящий особую атмосферу в городской пейзаж.
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog__box-item hidden churches">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img src="main/catalog/11,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/11,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/11,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Океанский просп., 44</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">
+                    Собор покрова пресвятой богородицы
+                  </h4>
+                  <p class="catalog__box-content-text">
+                    Духовное центральное место, где сочетаются вера и искусство.
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog__box-item hidden churches">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img src="main/catalog/12,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/12,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/12,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">ул. Володарского, 22</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">
+                    Католическая церковь пресвятой богородицы
+                  </h4>
+                  <p class="catalog__box-content-text">
+                    Историческое святилище, придающее Владивостоку многообразие религиозных культур.
+                  </p>
+                </div>
+              </div>
+
+              <button class="loadmore loadmore--mobile">Загрузить ещё</button>
+
+              <div class="catalog__box-item hidden other">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img src="main/catalog/13,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/13,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/13,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Алеутская ул., 2</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">
+                    железнодорожный возкал владивостока
+                  </h4>
+                  <p class="catalog__box-content-text">
+                    Историческая точка отправления и прибытия, ставшая символом начала Великой Сибирской Магистрали.
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog__box-item hidden museum">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img src="main/catalog/14,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/14,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/14,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">ул. Корабельная Набережная</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">
+                    Мемориальная гвардейская краснознаменная подводная лодка С-56 (Mузей)
+                  </h4>
+                  <p class="catalog__box-content-text">
+                    Музей под открытым небом, напоминающий о героической эпохе подводного флота.
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog__box-item hidden hill">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img src="main/catalog/15,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/15,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/15,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Первомайский район</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">Сопка бурачека</h4>
+                  <p class="catalog__box-content-text">
+                    Уединенное место с живописным видом на город и залив, идеальное для спокойных прогулок.
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog__box-item hidden fortress">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img src="main/catalog/16,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/16,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/16,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Набережная Цесаревича</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">Форт №7 им. Цесаревича Алексея</h4>
+                  <p class="catalog__box-content-text">
+                    Историческая крепость, охраняющая память о военных событиях в регионе.
+                  </p>
+                </div>
+              </div>
+
+              <button class="loadmore loadmore--mobile">Загрузить ещё</button>
+
+              <div class="catalog__box-item hidden monument">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img src="main/catalog/17,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/17,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/17,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Ленинский район</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">
+                    Мемориальный комплекс на Корабельной набережной
+                  </h4>
+                  <p class="catalog__box-content-text">
+                    Посвященный погибшим в мирное время, он напоминает о цене мира и безопасности.
+                  </p>
+                </div>
+              </div>
+
+              <div class="catalog__box-item hidden embankment">
+                <div class="slider">
+                  <div class="slider__item">
+                    <img src="main/catalog/18,1.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/18,2.jpg" alt="">
+                  </div>
+                  <div class="slider__item">
+                    <img src="main/catalog/18,3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="catalog__box-location">
+                  <img src="main/catalog/geolocation.svg" alt="">
+                  <span class="catalog__box-location-text">Набережная Цесаревича</span>
+                </div>
+                <div class="catalog__box-content">
+                  <h4 class="catalog__box-content-title">набережная цесаревича</h4>
+                  <p class="catalog__box-content-text">
+                    Прекрасное место для прогулок, где сочетаются виды на море и историческая архитектура города.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="travelers">
+        <div class="container">
+          <h2 class="travelers__title">Мнения путешественников</h2>
+          <div class="travelers__slider">
+
+            <div class="travelers__slide">
+
+              <div class="travelers__item">
+                <div class="travelers__user">
+                  <img class="travelers__user-img" src="main/travelers/person-1.jpg" alt="">
+                  <div class="travelers__user-info">
+                    <span class="travelers__user-nickname">Vadim</span>
+                    <span class="travelers__user-city">Мурманск, Россия</span>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="88" height="16" viewBox="0 0 88 16" fill="none">
+                  <g clip-path="url(#clip0_23_18)">
+                  <path d="M9.33333 0C4.92533 0 1.33333 3.592 1.33333 8C1.33333 12.408 4.92533 16 9.33333 16C13.7413 16 17.3333 12.4133 17.3333 8C17.3333 3.592 13.7467 0 9.33333 0Z" fill="#00AA6C"/>
+                  <path d="M26.6667 0C22.2587 0 18.6667 3.592 18.6667 8C18.6667 12.408 22.2587 16 26.6667 16C31.0747 16 34.6667 12.4133 34.6667 8C34.6667 3.592 31.08 0 26.6667 0Z" fill="#00AA6C"/>
+                  <path d="M44 0C39.592 0 36 3.592 36 8C36 12.408 39.592 16 44 16C48.408 16 52 12.4133 52 8C52 3.592 48.4133 0 44 0Z" fill="#00AA6C"/>
+                  <path d="M61.3333 0C56.9253 0 53.3333 3.592 53.3333 8C53.3333 12.408 56.9253 16 61.3333 16C65.7413 16 69.3333 12.4133 69.3333 8C69.3333 3.592 65.7467 0 61.3333 0Z" fill="#00AA6C"/>
+                  <path d="M78.6667 0C74.2587 0 70.6667 3.592 70.6667 8C70.6667 12.408 74.2587 16 78.6667 16C83.0747 16 86.6667 12.4133 86.6667 8C86.6667 3.592 83.08 0 78.6667 0Z" fill="#00AA6C"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_23_18">
+                  <rect width="88" height="16" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+                <blockquote class="travelers__blockquote">
+                  <h3 class="travelers__blockquote-title">
+                    6-й в мире по конструктивной высоте...
+                  </h3>
+                  <p class="travelers__blockquote-text">
+                    Введённый в эксплуатацию к саммиту АТЭС в 2012 году Русский мост на тот момент стал вторым в мире после моста Мийо во Франции, который я в своё время тоже проезжал по пути из Барселоны в Париж. 320-метровый по высоте Русский не дотянул до Мийо всего 16 метров.
+                    <!-- Мийо по-прежнему первый в мире, но между ним и Русским теперь втиснулись 2 китайца и 2 турка. Причём пятый по высоте мост Султана Селима Явуза в Стамбуле перекинут тоже через Босфор, но только через тот изначальный Босфор. К сожалению, сфотографировать по нормальному Русский мост в отличие от строящегося параллельно с ним Золотого я не смог. Из автобуса фото получаются не фонтан. Надо выходить на остановках перед или после моста или вообще брать экскурсию на кораблике под мостом. Но между мостом и Приморской сценой Мариинского театра мы выбрали балет в Мариинке....  -->
+                  </p>
+                  <button class="travelers-readmore">Подробнее...</button>
+                  <span class="travelers__blockquote-about">Отзыв о: Русский Мост</span>
+                </blockquote>
+                <span class="travelers__date">Опубликовано 27 сентября 2023 г.</span>
+              </div>
+            </div>
+
+            <div class="travelers__slide">
+
+              <div class="travelers__item">
+                <div class="travelers__user">
+                  <img class="travelers__user-img" src="main/travelers/person-2.jpg" alt="">
+                  <div class="travelers__user-info">
+                    <span class="travelers__user-nickname">paradise T</span>
+                    <span class="travelers__user-city">Казань, Россия</span>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="88" height="16" viewBox="0 0 88 16" fill="none">
+                  <g clip-path="url(#clip0_23_18)">
+                  <path d="M9.33333 0C4.92533 0 1.33333 3.592 1.33333 8C1.33333 12.408 4.92533 16 9.33333 16C13.7413 16 17.3333 12.4133 17.3333 8C17.3333 3.592 13.7467 0 9.33333 0Z" fill="#00AA6C"/>
+                  <path d="M26.6667 0C22.2587 0 18.6667 3.592 18.6667 8C18.6667 12.408 22.2587 16 26.6667 16C31.0747 16 34.6667 12.4133 34.6667 8C34.6667 3.592 31.08 0 26.6667 0Z" fill="#00AA6C"/>
+                  <path d="M44 0C39.592 0 36 3.592 36 8C36 12.408 39.592 16 44 16C48.408 16 52 12.4133 52 8C52 3.592 48.4133 0 44 0Z" fill="#00AA6C"/>
+                  <path d="M61.3333 0C56.9253 0 53.3333 3.592 53.3333 8C53.3333 12.408 56.9253 16 61.3333 16C65.7413 16 69.3333 12.4133 69.3333 8C69.3333 3.592 65.7467 0 61.3333 0Z" fill="#00AA6C"/>
+                  <path d="M78.6667 0C74.2587 0 70.6667 3.592 70.6667 8C70.6667 12.408 74.2587 16 78.6667 16C83.0747 16 86.6667 12.4133 86.6667 8C86.6667 3.592 83.08 0 78.6667 0Z" fill="#00AA6C"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_23_18">
+                  <rect width="88" height="16" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+                <blockquote class="travelers__blockquote">
+                  <h3 class="travelers__blockquote-title">Маяк</h3>
+                  <p class="travelers__blockquote-text">
+                    Маяк Токаревского мне очень нравится подобные сооружения я видел впервые, добраться до него легко во время отлива, во время прилива для посещения потребуется забрать штаны, иначе есть риск их промочить. Глубина порядка 1 метра по насыпи.
+                  </p>
+                  <span class="travelers__blockquote-about">Отзыв о: Маяк Эгершельд</span>
+                </blockquote>
+                <span class="travelers__date">Опубликовано 14 июля 2023 г.</span>
+              </div>
+
+            </div>
+            
+            <div class="travelers__slide">
+
+              <div class="travelers__item">
+                <div class="travelers__user">
+                  <img class="travelers__user-img" src="main/travelers/person-3.jpg" alt="">
+                  <div class="travelers__user-info">
+                    <span class="travelers__user-nickname">Константин Елисеев</span>
+                    <span class="travelers__user-city">Москва, Россия</span>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="88" height="16" viewBox="0 0 88 16" fill="none">
+                  <g clip-path="url(#clip0_23_18)">
+                  <path d="M9.33333 0C4.92533 0 1.33333 3.592 1.33333 8C1.33333 12.408 4.92533 16 9.33333 16C13.7413 16 17.3333 12.4133 17.3333 8C17.3333 3.592 13.7467 0 9.33333 0Z" fill="#00AA6C"/>
+                  <path d="M26.6667 0C22.2587 0 18.6667 3.592 18.6667 8C18.6667 12.408 22.2587 16 26.6667 16C31.0747 16 34.6667 12.4133 34.6667 8C34.6667 3.592 31.08 0 26.6667 0Z" fill="#00AA6C"/>
+                  <path d="M44 0C39.592 0 36 3.592 36 8C36 12.408 39.592 16 44 16C48.408 16 52 12.4133 52 8C52 3.592 48.4133 0 44 0Z" fill="#00AA6C"/>
+                  <path d="M61.3333 0C56.9253 0 53.3333 3.592 53.3333 8C53.3333 12.408 56.9253 16 61.3333 16C65.7413 16 69.3333 12.4133 69.3333 8C69.3333 3.592 65.7467 0 61.3333 0Z" fill="#00AA6C"/>
+                  <path d="M78.6667 0C74.2587 0 70.6667 3.592 70.6667 8C70.6667 12.408 74.2587 16 78.6667 16C83.0747 16 86.6667 12.4133 86.6667 8C86.6667 3.592 83.08 0 78.6667 0Z" fill="#00AA6C"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_23_18">
+                  <rect width="88" height="16" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                <blockquote class="travelers__blockquote">
+                  <h3 class="travelers__blockquote-title">Начало главной ж/д в мире</h3>
+                  <p class="travelers__blockquote-text">
+                    Начало Великой магистрали , Транссиба!!! Удобный вокзал, чем- то напоминает Ярославский в Москве… чистеньком опрятненько
+                  </p>
+                  <span class="travelers__blockquote-about">
+                    Отзыв о: Железнодорожный вокзал Владивостока
+                  </span>
+                </blockquote>
+                <span class="travelers__date">Опубликовано 5 октября 2023 г.</span>
+              </div>
+
+            </div>
+
+            <div class="travelers__slide">
+
+              <div class="travelers__item">
+                <div class="travelers__user">
+                  <img class="travelers__user-img" src="main/travelers/person-4.jpg" alt="">
+                  <div class="travelers__user-info">
+                    <span class="travelers__user-nickname">mnr2001</span>
+                    <span class="travelers__user-city">Москва, Россия</span>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="88" height="16" viewBox="0 0 88 16" fill="none">
+                  <g clip-path="url(#clip0_23_18)">
+                  <path d="M9.33333 0C4.92533 0 1.33333 3.592 1.33333 8C1.33333 12.408 4.92533 16 9.33333 16C13.7413 16 17.3333 12.4133 17.3333 8C17.3333 3.592 13.7467 0 9.33333 0Z" fill="#00AA6C"/>
+                  <path d="M26.6667 0C22.2587 0 18.6667 3.592 18.6667 8C18.6667 12.408 22.2587 16 26.6667 16C31.0747 16 34.6667 12.4133 34.6667 8C34.6667 3.592 31.08 0 26.6667 0Z" fill="#00AA6C"/>
+                  <path d="M44 0C39.592 0 36 3.592 36 8C36 12.408 39.592 16 44 16C48.408 16 52 12.4133 52 8C52 3.592 48.4133 0 44 0Z" fill="#00AA6C"/>
+                  <path d="M61.3333 0C56.9253 0 53.3333 3.592 53.3333 8C53.3333 12.408 56.9253 16 61.3333 16C65.7413 16 69.3333 12.4133 69.3333 8C69.3333 3.592 65.7467 0 61.3333 0Z" fill="#00AA6C"/>
+                  <path d="M78.6667 0C74.2587 0 70.6667 3.592 70.6667 8C70.6667 12.408 74.2587 16 78.6667 16C83.0747 16 86.6667 12.4133 86.6667 8C86.6667 3.592 83.08 0 78.6667 0Z" fill="#00AA6C"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_23_18">
+                  <rect width="88" height="16" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+                <blockquote class="travelers__blockquote">
+                  <h3 class="travelers__blockquote-title">Главная сопка Владивостока</h3>
+                  <p class="travelers__blockquote-text">
+                    Та смотровая площадка, которая рядом с памятником Кириллу и Мефодию, это ещё не сопка! Это всего лишь пол-сопки. Сопка — это на самом верху, рядом с телевизионной вышкой, высота 193 метра над уровнем моря. Это телевизионная вышка. Это крест в честь казаков-землепроходцев. 
+                    <!-- Это отсутствие специальной оборудованной смотровой площадки, зато есть не оборудованная вершина сопки, откуда открываются замечательные виды на город, на бухту Золотой Рог, на Золотой мост. И даже вдалеке видны Русский мост и Русский остров. Если, конечно, тумана нет. Когда мы были на сопке, тумана не было! -->
+                  </p>
+                  <button class="travelers-readmore">Подробнее...</button>
+                  <span class="travelers__blockquote-about">
+                    Отзыв о: Сопка Орлиное Гнездо
+                  </span>
+                </blockquote>
+                <span class="travelers__date">Опубликовано 17 ноября 2022 г.</span>
+              </div>
+
+            </div>
+
+            <div class="travelers__slide">
+
+              <div class="travelers__item">
+                <div class="travelers__user">
+                  <img class="travelers__user-img" src="main/travelers/person-5.jpg" alt="">
+                  <div class="travelers__user-info">
+                    <span class="travelers__user-nickname">Игорь</span>
+                    <span class="travelers__user-city">Комсомольск-на-Амуре, Россия</span>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="88" height="16" viewBox="0 0 88 16" fill="none">
+                  <g clip-path="url(#clip0_23_18)">
+                  <path d="M9.33333 0C4.92533 0 1.33333 3.592 1.33333 8C1.33333 12.408 4.92533 16 9.33333 16C13.7413 16 17.3333 12.4133 17.3333 8C17.3333 3.592 13.7467 0 9.33333 0Z" fill="#00AA6C"/>
+                  <path d="M26.6667 0C22.2587 0 18.6667 3.592 18.6667 8C18.6667 12.408 22.2587 16 26.6667 16C31.0747 16 34.6667 12.4133 34.6667 8C34.6667 3.592 31.08 0 26.6667 0Z" fill="#00AA6C"/>
+                  <path d="M44 0C39.592 0 36 3.592 36 8C36 12.408 39.592 16 44 16C48.408 16 52 12.4133 52 8C52 3.592 48.4133 0 44 0Z" fill="#00AA6C"/>
+                  <path d="M61.3333 0C56.9253 0 53.3333 3.592 53.3333 8C53.3333 12.408 56.9253 16 61.3333 16C65.7413 16 69.3333 12.4133 69.3333 8C69.3333 3.592 65.7467 0 61.3333 0Z" fill="#00AA6C"/>
+                  <path d="M78.6667 0C74.2587 0 70.6667 3.592 70.6667 8C70.6667 12.408 74.2587 16 78.6667 16C83.0747 16 86.6667 12.4133 86.6667 8C86.6667 3.592 83.08 0 78.6667 0Z" fill="#00AA6C"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_23_18">
+                  <rect width="88" height="16" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+                <blockquote class="travelers__blockquote">
+                  <h3 class="travelers__blockquote-title">Главная</h3>
+                  <p class="travelers__blockquote-text">
+                    А вот этого я точно не знал, не знал, что Светла́нская у́лица — главная улица Владивостока, была в свое время переименована в память о визите фрегата «Светлана» с Великим князем Алексеем Александровичем - главным морским начальником Российской империи в те далекие годы. 
+                    <!-- Дело было в 1873-м году. Улица очень длинная для Вливостока. В свое время пересекала весь город. Начинается от Спортивной гавани и кинотеатра Океан и продолжается вдоль всей бухты Золотой рог на пять километров. На улице и вокруг неё находится 80 процентов всех достопримечательностей города, так что, если вы потратите день и пешком обойдете улицу и окрестности, то можно твердо сказать , что, по крайней мере с историей города вы уже хорошо знакомы! Здесь много интересных зданий и известных памятников, главная площадь города и края и главное административное здание. Прекрасные виды на бухту и на красавец мост, пересекающий её. -->
+                  </p>
+                  <button class="travelers-readmore">Подробнее...</button>
+                  <span class="travelers__blockquote-about">
+                    Отзыв о: Светланская улица
+                  </span>
+                </blockquote>
+                <span class="travelers__date">Опубликовано 17 октября 2021 г.</span>
+              </div>
+
+            </div>
+
+            <div class="travelers__slide">
+
+              <div class="travelers__item">
+                <div class="travelers__user">
+                  <img class="travelers__user-img" src="main/travelers/person-6.jpg" alt="">
+                  <div class="travelers__user-info">
+                    <span class="travelers__user-nickname">Струнец Л</span>
+                    <span class="travelers__user-city">Нижний Новгород, Россия</span>
+                  </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="88" height="16" viewBox="0 0 88 16" fill="none">
+                  <g clip-path="url(#clip0_23_18)">
+                  <path d="M9.33333 0C4.92533 0 1.33333 3.592 1.33333 8C1.33333 12.408 4.92533 16 9.33333 16C13.7413 16 17.3333 12.4133 17.3333 8C17.3333 3.592 13.7467 0 9.33333 0Z" fill="#00AA6C"/>
+                  <path d="M26.6667 0C22.2587 0 18.6667 3.592 18.6667 8C18.6667 12.408 22.2587 16 26.6667 16C31.0747 16 34.6667 12.4133 34.6667 8C34.6667 3.592 31.08 0 26.6667 0Z" fill="#00AA6C"/>
+                  <path d="M44 0C39.592 0 36 3.592 36 8C36 12.408 39.592 16 44 16C48.408 16 52 12.4133 52 8C52 3.592 48.4133 0 44 0Z" fill="#00AA6C"/>
+                  <path d="M61.3333 0C56.9253 0 53.3333 3.592 53.3333 8C53.3333 12.408 56.9253 16 61.3333 16C65.7413 16 69.3333 12.4133 69.3333 8C69.3333 3.592 65.7467 0 61.3333 0Z" fill="#00AA6C"/>
+                  <path d="M78.6667 0C74.2587 0 70.6667 3.592 70.6667 8C70.6667 12.408 74.2587 16 78.6667 16C83.0747 16 86.6667 12.4133 86.6667 8C86.6667 3.592 83.08 0 78.6667 0Z" fill="#00AA6C"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_23_18">
+                  <rect width="88" height="16" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+                <blockquote class="travelers__blockquote">
+                  <h3 class="travelers__blockquote-title">Начало главной ж/д в мире</h3>
+                  <p class="travelers__blockquote-text">
+                    Все довольны остались. На следующий год обязательно приедем суда же. Всем рекомендую
+                  </p>
+                  <span class="travelers__blockquote-about">
+                    Отзыв о: Государственный морской заповедник
+                  </span>
+                </blockquote>
+                <span class="travelers__date">
+                  Опубликовано 20 июня 2023 г.
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <div class="questions__inner">
+            <h2 class="questions__title">Владивосток: часто задаваемые вопросы</h2>
+            <ul class="questions__list">
+              <li class="questions__item questions__item--first">
+                <p class="questions__item-text">
+                  достопримечательности и культурные объекты: какие места в г. Владивосток являются лучшими?
+                </p>
+                <img class="questions__item-img" src="main/arrow-down.svg" alt="">
+              </li>
+              <li class="questions__item">
+                <p class="questions__item-text">
+                  достопримечательности и культурные объекты: какие места в г. Владивосток являются лучшими для отдыха с семьей и детьми?
+                </p>
+                <img class="questions__item-img" src="main/arrow-down.svg" alt="">
+              </li>
+              <li class="questions__item">
+                <p class="questions__item-text">
+                  достопримечательности и культурные объекты: какие места для пар в г.Владивосток являются лучшими?
+                </p>
+                <img class="questions__item-img" src="main/arrow-down.svg" alt="">
+              </li>
+              <li class="questions__item">
+                <p class="questions__item-text">
+                  достопримечательности и культурные объекты: какие места в г. Владивосток являются лучшими для групп?
+                </p>
+                <img class="questions__item-img" src="main/arrow-down.svg" alt="">
+              </li>
+              <li class="questions__item">
+                <p class="questions__item-text">
+                  достопримечательности и культурные объекты: какие места в г. Владивосток являются лучшими для путешественников с ограниченным бюджетом?
+                </p>
+                <img class="questions__item-img" src="main/arrow-down.svg" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__box">
+            <a class="logo" href="index.html">
+              <img class="logo__img" src="footer/logo.svg" alt="">
+            </a>
+            <div class="copyright">© 2024 VladGuide. Все права защищены.</div>
+          </div>
+          <span class="footer__text">Следите за новостями</span>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-img" src="footer/social-1.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-img" src="footer/social-2.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-img" src="footer/social-3.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="jquery.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

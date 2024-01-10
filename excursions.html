@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="excursions.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-content">
+            <a class="logo" href="index.html">
+              <img class="logo__img" src="header/logo.svg" alt="">
+            </a>
+            <button class="location-btn">
+              <img class="location-btn__img" src="header/geolocation.svg" alt="">
+              <span class="location-btn__text">Владивосток</span>
+            </button>
+            <div class="search__wrapper">
+              <input class="search" type="text" placeholder="Поиск...">
+            </div>
+            <button class="calendar">
+              <img class="calendar__img" src="header/calendar.svg" alt="">
+              <span class="calendar__text">Календарь событий</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header__menu">
+        <div class="container">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">Достопримечательности</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="exhibitions.html">Выставки</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="entertainment.html">Развлечения</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="excursions.html">Экскурсии</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="excursions">
+        <div class="container">
+          <div class="exursions__inner">
+            <h1 class="excursions__title">Экскурсии Владивостока </h1>
+            <div class="excursions__items">
+              <div class="excursions__item">
+                <img class="excursions__img" src="excursions/excursion-1.jpg" alt="">
+                <span class="excursions__type">Автомобильно-пешеходная</span>
+                <div class="excursions__content">
+                  <div class="excursions__content-info">
+                    <span class="excursions__content-info-type">индивидуальная</span>
+                    <div class="excursions__content-info-box">
+                      <img src="excursions/clock.svg" alt="">
+                      <span class="excursions__content-info-time">5 ч.</span>
+                    </div>
+                  </div>
+                  <h2 class="excursions__content-title">
+                    Знакомство с Владивостоком нестандартно
+                  </h2>
+                  <p class="excursions__content-text">
+                    Этот экскурсионный день погрузит вас в местный колорит Владивостока, покажет экзотическую сторону, восхитит морскими панорамами.
+                  </p>
+                  <span class="excursions__content-price">11000 ₽</span>
+                  <span class="excursions__content-subtext">на экскурсию</span>
+                </div>
+              </div>
+              <div class="excursions__item">
+                <img class="excursions__img" src="excursions/excursion-2.jpg" alt="">
+                <span class="excursions__type">На автомобиле</span>
+                <div class="excursions__content">
+                  <div class="excursions__content-info">
+                    <span class="excursions__content-info-type">индивидуальная</span>
+                    <div class="excursions__content-info-box">
+                      <img src="excursions/clock.svg" alt="">
+                      <span class="excursions__content-info-time">4 ч. 30 мин.</span>
+                    </div>
+                  </div>
+                  <h2 class="excursions__content-title">
+                    Топ 8 достопримечательностей острова Русский + мыс Тобизина на внедорожнике
+                  </h2>
+                  <p class="excursions__content-text">
+                    Этот день мы проведём, исследуя самые значимые достопримечательности острова Русский, начиная от Русского моста и до мыса Тобизина.
+                  </p>
+                  <span class="excursions__content-price">10900 ₽</span>
+                  <span class="excursions__content-subtext">на экскурсию</span>
+                </div>
+              </div>
+              <div class="excursions__item">
+                <img class="excursions__img" src="excursions/excursion-3.jpg" alt="">
+                <span class="excursions__type">Пешеходная</span>
+                <div class="excursions__content">
+                  <div class="excursions__content-info">
+                    <span class="excursions__content-info-type">индивидуальная</span>
+                    <div class="excursions__content-info-box">
+                      <img src="excursions/clock.svg" alt="">
+                      <span class="excursions__content-info-time">2 ч.</span>
+                    </div>
+                  </div>
+                  <h2 class="excursions__content-title">
+                    Прогулка на изнанку жизни портового города
+                  </h2>
+                  <p class="excursions__content-text">
+                    Эту свою авторскую прогулку я посвятила о тому, что редко услышишь на классической экскурсии, но что делает объёмнее и ближе город и его специфику.
+                  </p>
+                  <span class="excursions__content-price">8000 ₽</span>
+                  <span class="excursions__content-subtext">на экскурсию</span>
+                </div>
+              </div>
+              <div class="excursions__item">
+                <img class="excursions__img" src="excursions/excursion-4.jpg" alt="">
+                <span class="excursions__type">Пешеходная</span>
+                <div class="excursions__content">
+                  <div class="excursions__content-info">
+                    <span class="excursions__content-info-type">индивидуальная</span>
+                    <div class="excursions__content-info-box">
+                      <img src="excursions/clock.svg" alt="">
+                      <span class="excursions__content-info-time">2 ч.</span>
+                    </div>
+                  </div>
+                  <h2 class="excursions__content-title">
+                    Остров Попова: аудиоэкскурсия на краю света
+                  </h2>
+                  <p class="excursions__content-text">
+                    Остров Попова — великолепное место для отдыха и прогулок, окружённое бухтами, проливом Старка и Амурским проливом. Вам предстоит познакомиться с северными пейзажами, вдохнуть морской ветер и услышать легенды этого места.
+                  </p>
+                  <span class="excursions__content-price">690 ₽</span>
+                  <span class="excursions__content-subtext">на экскурсию</span>
+                </div>
+              </div>
+              <div class="excursions__item">
+                <img class="excursions__img" src="excursions/excursion-5.jpg" alt="">
+                <span class="excursions__type">Пешеходная</span>
+                <div class="excursions__content">
+                  <div class="excursions__content-info">
+                    <span class="excursions__content-info-type">групповая сборная</span>
+                    <div class="excursions__content-info-box">
+                      <img src="excursions/clock.svg" alt="">
+                      <span class="excursions__content-info-time">1 ч.</span>
+                    </div>
+                  </div>
+                  <h2 class="excursions__content-title">
+                    Иммерсивная прогулка «Тени Миллионки»
+                  </h2>
+                  <p class="excursions__content-text">
+                    Иммерсивная прогулка «Тени Миллионки» проведёт вас по задворкам исторического китайского квартала. Надев наушники, вы перенесётесь в мистическое прошлое этих мест, чтобы пройти по лабиринту старинных улочек и погрузиться в гущу удивительных событий.
+                  </p>
+                  <span class="excursions__content-price">1500 ₽</span>
+                  <span class="excursions__content-subtext">на экскурсию</span>
+                </div>
+              </div>
+              <div class="excursions__item">
+                <img class="excursions__img" src="excursions/excursion-6.jpg" alt="">
+                <span class="excursions__type">Пешеходная</span>
+                <div class="excursions__content">
+                  <div class="excursions__content-info">
+                    <span class="excursions__content-info-type">групповая сборная</span>
+                    <div class="excursions__content-info-box">
+                      <img src="excursions/clock.svg" alt="">
+                      <span class="excursions__content-info-time">1 ч.</span>
+                    </div>
+                  </div>
+                  <h2 class="excursions__content-title">
+                    Иммерсивная прогулка «Городские легенды»
+                  </h2>
+                  <p class="excursions__content-text">
+                    Приглашаются все желающие принять участие в иммерсивной обзорной экскурсии «Городские легенды». На прогулке «Городские легенды» вы узнаете о легендарных людях, чьи нити судеб тесно переплелись с судьбой Владивостока.
+                  </p>
+                  <span class="excursions__content-price">920 ₽</span>
+                  <span class="excursions__content-subtext">на экскурсию</span>
+                </div>
+              </div>
+              <div class="excursions__item">
+                <img class="excursions__img" src="excursions/excursion-7.jpg" alt="">
+                <span class="excursions__type">Пешеходная</span>
+                <div class="excursions__content">
+                  <div class="excursions__content-info">
+                    <span class="excursions__content-info-type">групповая сборная</span>
+                    <div class="excursions__content-info-box">
+                      <img src="excursions/clock.svg" alt="">
+                      <span class="excursions__content-info-time">1 ч.</span>
+                    </div>
+                  </div>
+                  <h2 class="excursions__content-title">
+                    Иммерсивная прогулка «Охотники за звуками»
+                  </h2>
+                  <p class="excursions__content-text">
+                    Приглашаем на иммерсивную прогулку всех желающих. Наш мир — самое удивительное место, даже в сравнении с самыми невероятными фантазиями. Главное знать куда смотреть! И это маленькое аудио путешествие как раз направляет взгляд и уши в нужную сторону.
+                  </p>
+                  <span class="excursions__content-price">820 ₽</span>
+                  <span class="excursions__content-subtext">на экскурсию</span>
+                </div>
+              </div>
+              <div class="excursions__item">
+                <img class="excursions__img" src="excursions/excursion-8.jpg" alt="">
+                <span class="excursions__type">Автомобильно-пешеходная</span>
+                <div class="excursions__content">
+                  <div class="excursions__content-info">
+                    <span class="excursions__content-info-type">индивидуальная</span>
+                    <div class="excursions__content-info-box">
+                      <img src="excursions/clock.svg" alt="">
+                      <span class="excursions__content-info-time">3 ч. 30 мин.</span>
+                    </div>
+                  </div>
+                  <h2 class="excursions__content-title">
+                    Самые красивые видовые города Владивостока на закате
+                  </h2>
+                  <p class="excursions__content-text">
+                    Мы посмотрим на Владивосток с высоты, чтобы влюбиться в него! Вас ожидают самые красочные пейзажи города. Поднимемся по 300-метровой лестнице на вершину сопки Бурачка. Увидим Золотой мост, 2 бухты, Русский остров и центр города.
+                  </p>
+                  <span class="excursions__content-price">5900 ₽</span>
+                  <span class="excursions__content-subtext">на экскурсию</span>
+                </div>
+              </div>
+              <div class="excursions__item excursions__item--big">
+                <img class="excursions__img" src="excursions/excursion-9.jpg" alt="">
+                <span class="excursions__type">Автомобильно-пешеходная</span>
+                <div class="excursions__content">
+                  <div class="excursions__content-info">
+                    <span class="excursions__content-info-type">индивидуальная</span>
+                    <div class="excursions__content-info-box">
+                      <img src="excursions/clock.svg" alt="">
+                      <span class="excursions__content-info-time">2 ч. 30 мин.</span>
+                    </div>
+                  </div>
+                  <h2 class="excursions__content-title">
+                    Город V под светом звезд (вечерний Владивосток)
+                  </h2>
+                  <p class="excursions__content-text">
+                    Вечерний Владивосток — это совершенно уникальный, не похожий на другие, город. Мы насладимся видами вечернего мегаполиса с самых популярных видовых площадок, прокатимся по двум мостам и побываем на секретных локациях, откуда город V откроется для вас в новом свете.
+                  </p>
+                  <span class="excursions__content-price">7100 ₽</span>
+                  <span class="excursions__content-subtext">на экскурсию</span>
+                </div>
+              </div>
+              <div class="excursions__item excursions__item--big">
+                <img class="excursions__img" src="excursions/excursion-10.jpg" alt="">
+                <span class="excursions__type">Пешеходная</span>
+                <div class="excursions__content">
+                  <div class="excursions__content-info">
+                    <span class="excursions__content-info-type">мини группа</span>
+                    <div class="excursions__content-info-box">
+                      <img src="excursions/clock.svg" alt="">
+                      <span class="excursions__content-info-time">1 ч.</span>
+                    </div>
+                  </div>
+                  <h2 class="excursions__content-title">
+                    Пять эпох Приморья в очках виртуальной реальности
+                  </h2>
+                  <p class="excursions__content-text">
+                    Приглашаем приобщиться к истории и культуре Приморского края. Технология виртуальной реальности + специально разработанный аудиогид помогут вам в этом. Переместившись из настоящего в прошлое, вы узнаете историю освоения Приморского края, появления города Владивостока.
+                  </p>
+                  <span class="excursions__content-price">900 ₽</span>
+                  <span class="excursions__content-subtext">на экскурсию</span>
+                </div>
+              </div>
+              <div class="excursions__item excursions__item--big">
+                <img class="excursions__img" src="excursions/excursion-11.jpg" alt="">
+                <span class="excursions__type">Автомобильно-пешеходная</span>
+                <div class="excursions__content">
+                  <div class="excursions__content-info">
+                    <span class="excursions__content-info-type">индивидуальная</span>
+                    <div class="excursions__content-info-box">
+                      <img src="excursions/clock.svg" alt="">
+                      <span class="excursions__content-info-time">5 ч.</span>
+                    </div>
+                  </div>
+                  <h2 class="excursions__content-title">
+                    Исторический променад по Приморским музеям + дегустация вина с профессиональным сомелье в красивом пространстве
+                  </h2>
+                  <p class="excursions__content-text">
+                    Сначала мы познакомимся с домом исследователя Приморского края В.К. Арсеньева, экскурсия дома-музея погрузит Вас в быт семьи путешественника. Затем мы отправимся на экскурсию в музей Арсеньева, где начинается история г. Владивосток, которую собирали еще отцы- основатели города.
+                  </p>
+                  <span class="excursions__content-price">5500 ₽</span>
+                  <span class="excursions__content-subtext">на экскурсию</span>
+                </div>
+              </div>
+              <div class="excursions__item excursions__item--big">
+                <img class="excursions__img" src="excursions/excursion-12.jpg" alt="">
+                <span class="excursions__type">Автомобильно-пешеходная</span>
+                <div class="excursions__content">
+                  <div class="excursions__content-info">
+                    <span class="excursions__content-info-type">индивидуальная</span>
+                    <div class="excursions__content-info-box">
+                      <img src="excursions/clock.svg" alt="">
+                      <span class="excursions__content-info-time">10 ч.</span>
+                    </div>
+                  </div>
+                  <h2 class="excursions__content-title">
+                    Партизанский район Приморья и Екатериновский массив
+                  </h2>
+                  <p class="excursions__content-text">
+                    Приглашаем вас на экскурсию по местам удивительных археологических находок Приморья. Мы отправимся изучать Партизанский район Приморья и прогуляемся по Стеклянухинскому городищу. Увидим Партизанскую ГРЭС и ее атмосферные окрестности. Посетим Екатерининский массив — признан организацией ЮНЕСКО памятником культурного наследия.
+                  </p>
+                  <span class="excursions__content-price">17000 ₽</span>
+                  <span class="excursions__content-subtext">на экскурсию</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__box">
+            <a class="logo" href="index.html">
+              <img class="logo__img" src="footer/logo.svg" alt="">
+            </a>
+            <div class="copyright">© 2024 VladGuide. Все права защищены.</div>
+          </div>
+          <span class="footer__text">Следите за новостями</span>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-img" src="footer/social-1.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-img" src="footer/social-2.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-img" src="footer/social-3.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
